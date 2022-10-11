@@ -58,41 +58,6 @@ def func():
     print(2, '', BLACK + '  ' * (1) + WHITE + '  ' * (8) + END)
     print(1, '', BLACK + '  ' * (1) + WHITE + '  ' * (8) + END)
 
-
-'''def array_init(array_in, st):
-    for i in range(10):
-        for j in range(10):
-            if j == 0:
-                array_in[i][j] = round(st * (8 - i) + st, 1)
-            if i == 9:
-                array_in[i][j] = round(j, 1)
-    return array_in
-
-
-def array_fill(array_fi, res, st):
-    for i in range(9):
-        for k in range(10):
-            if abs(array_fi[i][0] - res[9 - k]) < st:
-                for j in range(9):
-                    if 8 - j == k:
-                        array_fi[i][j + 1] = 1
-    return array_fi
-
-
-def print_plot(plot):
-    for i in range(9):
-        line = ''
-        for j in range(10):
-            if j == 0:
-                line += WHITE + str(plot[i][j])
-            if plot[i][j] == 0:
-                line += '  '
-            elif plot[i][j] == 1:
-                line += RED + '  ' + WHITE
-        line += END
-        print(line)
-    print(WHITE + '0   1 2 3 4 5 6 7 8 9' + END)'''
-
 RED = esc(41)
 BLUE = esc(44)
 WHITE = esc(40)
